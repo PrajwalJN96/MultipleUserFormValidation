@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-image: linear-gradient(to right, rgb(109, 255, 255),rgb(255, 109, 231));
+        }
+        #nav{
+            background-color: #f62020cb;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        #nav ul{
+            margin: 0 auto;   
+            width: 80%;
+            display: flex;
+            justify-content: space-between ;
+        }
+        #nav ul li{
+            text-align: center;
+            list-style: none;
+        }
+        #main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 35px;
+            height: 500px;
+            width: 350px;
+            border:3px solid #000000;
+            border-radius: 10px;
+            background-color: #ad9aff5b;
+        }
+        #box input{
+            margin:0 20px;
+            padding: 3px;
+            border-radius: 3px;
+            border: none;
+        }
+        #box label{
+            margin: 0 10px;
+        }
+        #btns{
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            padding: 0;
+            margin: 0;
+        }
+        #btns button{
+            padding: 5px;
+            font-family: cursive;
+            font-size: medium;
+            width: 42%;
+            margin: 0 10px;
+            border: 4px solid rgb(255, 255, 255);
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+
+        }
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+       span{
+            margin-left: 20px;
+            color: red;
+        }
+        .valid{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <!-- <li id="menu1"><a href="./indexh.html">Home</a></li> -->
+            <li id="menu2"><a href="./indexh.html">Place</a></li>
+            <li id="menu3"><a href="./indexl.html">Login</a></li>
+            <li id="menu4"><a href="./indexs.html">Signup</a></li>
+        </ul>
+    </div>
+    <div id="main">
+     <form action="file:///F:/ALL%20IN%20ONE/Jspider%20PROGRAMS/Jspider%20javascript/form%20validation/indexl.html">
+        <div id="box">
+
+            <label for="name">Name </label>
+            <input type="text" id="name">
+            <span id="nameout"></span>
+            
+            <label for="number">Phone Number </label>
+            <input type="number" id="number">
+            <span id="numout"></span>
+            
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <span id="emailout"></span>
+
+            <label for="password">Password </label>
+            <input type="text" id="password">
+            <span id="passout"></span>
+
+            <label for="confirm-password">Confirm password </label>
+            <input type="text" id="confirm-password">
+            <span id="confpassout"></span>
+
+            <div id="btns">
+                <button id="submit" >Submit</button>
+                <button id="reset">Reset</button>
+                <button id="removedata">RemoveData</button>
+            </div>
+        </div>
+    </form>
+
+    </div>
+
+    <script src="./FormValidation.js"></script>
+</body>
+</html>
