@@ -38,7 +38,7 @@ for(let i = 0; i<names.length; i++){
 
 let checkNumber = () =>{
     let number = numberEle.value;
-if(number.length == 9){
+if(number.length == 10){
     numOut.classList.add("valid")
     numOut.innerText = "Valid input"
     return true;
