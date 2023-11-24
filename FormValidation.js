@@ -44,7 +44,7 @@ if(number.length == 10){
     return true;
 }else{
     numOut.classList.remove("valid")
-    numOut.innerText = "Invalid input, ( 9-digit number)"
+    numOut.innerText = "Invalid input, ( 10-digit number)"
 }
 }
 
